@@ -30,12 +30,35 @@ Below, we've provided an outline for your response but feel free to modify it as
 
 ### Response
 
-[Replace with your explanation of the concept with an analogy]
+According to MDN (Mozilla Developer Network), a function is “a reusable block of code that performs a specific task, often taking input and returning an output.”
+
+You can think of a function like a vending machine.
+When you press the buttons (give it input), it performs an action inside (runs the code), and then gives you what you asked for (output).
 
 Check out this example:
 
-```js
-// Add your example here
-```
+// This is an arrow function
+const calculateArea = (width, height) => {
+  // width and height are parameters
+  return width * height; // return statement sends back the result
+};
 
-[Replace with your explanation of the example and explanation of the syntax]
+// calling (or invoking) the function
+console.log(calculateArea(5, 3));  // 15
+console.log(calculateArea(10, 7)); // 70
+
+
+Explanation of the example and syntax:
+
+const calculateArea = (width, height) => { ... }
+This is an arrow function.
+
+Inside the parentheses (width, height) are the parameters — these act like placeholders for the values you pass in.
+
+The { ... } part is called the code block. It’s where the instructions for the function live.
+
+The return statement tells the function what value to give back when it finishes running. In this case, it returns the result of width * height.
+
+calculateArea(5, 3) is a function call (also called invoking the function). Here we pass the numbers 5 and 3 as the actual input values, and the function returns 15.
+
+In short, functions let us reuse code, organize logic, and make programs easier to read and maintain.
